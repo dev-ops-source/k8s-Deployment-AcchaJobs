@@ -21,11 +21,12 @@ spec:
         - name: MYSQL_ROOT_PASSWORD
           value: "root"
         - name: MYSQL_DATABASE
-          value: "jobwebsite"
+          value: "elearningsystem"
         volumeMounts:
-          - name: mysql-storage
-            mountPath: /var/lib/mysql
-       volumes:
         - name: mysql-storage
-          persistentVolumeClaim:
-            claimName: local-pvc
+          mountPath: /var/lib/mysql
+      volumes:
+      - name: mysql-storage
+        persistentVolumeClaim:
+          claimName: local-pvc
+

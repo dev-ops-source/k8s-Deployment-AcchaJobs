@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: angular-deployment
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: angular
@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: angular
-        image: hemant9766/frontendjob-website:v6
+        image: hemant9766/elearningmanagement-frontend:v4
         ports:
         - containerPort: 80

@@ -8,7 +8,7 @@ spec:
   accessModes:
     - ReadWriteOnce
   hostPath:
-    path: /mnt/acchajobs/
+    path: /mnt
   storageClassName: local-storage
   persistentVolumeReclaimPolicy: Retain
   volumeMode: Filesystem
